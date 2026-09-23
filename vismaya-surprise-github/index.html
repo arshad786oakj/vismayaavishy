@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<title>For Vishy — Arshad</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="grain"></div><div id="particles" aria-hidden="true"></div>
+<div class="vignette"></div>
+
+<header class="topbar">
+  <div class="brand">ARSHAD</div>
+  <div class="progress" id="progress">01 / 05</div>
+</header>
+
+<main id="app">
+  <section class="chapter active" id="chapter1" data-chapter="1">
+    <div class="center opening">
+      <div class="eyebrow reveal">A PRIVATE LITTLE GIFT</div>
+      <h1 class="reveal delay1">Vishy<span class="gold">…</span></h1>
+      <p class="lead reveal delay2">Someone left something for you.</p>
+      <p class="whisper reveal delay3">Don't open it too quickly.</p>
+      <div class="gift-wrap reveal delay4">
+        <button class="envelope" id="openGift" aria-label="Open the gift">
+          <span class="env-flap"></span><span class="env-paper"></span>
+          <span class="env-seal">A</span>
+        </button>
+      </div>
+      <p class="caption reveal delay5">A little something from Arshad.</p>
+      <button class="primary reveal delay5" id="openGift2">OPEN IT</button>
+    </div>
+  </section>
+
+  <section class="chapter" id="chapter2" data-chapter="2">
+    <div class="scene message-scene">
+      <div class="eyebrow">01 — THE MESSAGE</div>
+      <div class="cinematic-lines">
+        <h2>Okay…<br><span>now you're here.</span></h2>
+        <p>So I should probably tell you<br>why I made this.</p>
+        <p>Because some people enter your life<span>…</span></p>
+        <p>…and somehow become family.</p>
+        <p class="accent-line">You're one of those people.</p>
+      </div>
+      <button class="next primary">CONTINUE</button>
+    </div>
+  </section>
+
+  <section class="chapter" id="chapter3" data-chapter="3">
+    <div class="scene family-scene">
+      <div class="eyebrow">02 — FAMILY</div>
+      <div class="family-card">
+        <div class="connection-line"></div>
+        <p class="bigline">Not by blood.</p>
+        <p class="bigline dim">But somehow… family.</p>
+        <h2>My sister<br><em>from another mother.</em></h2>
+        <div class="heartmark">♡</div>
+      </div>
+      <button class="next primary">OPEN THE MEMORY BOX</button>
+    </div>
+  </section>
+
+  <section class="chapter" id="chapter4" data-chapter="3">
+    <div class="scene memory-scene">
+      <div class="eyebrow">03 — THE MEMORY BOX</div>
+      <h2 class="section-title">There are a few things<br><em>hidden inside.</em></h2>
+      <div class="memory-stage">
+        <div class="memory-box"><div class="box-lid"></div><div class="box-body"></div><div class="box-light"></div></div>
+        <button class="memory-object letter-object" data-memory="letter"><span>✦</span><b>LETTER</b></button>
+        <button class="memory-object photo-object" data-memory="photo"><span>□</span><b>POLAROID</b></button>
+        <button class="memory-object key-object" data-memory="key"><span>⌁</span><b>KEY</b></button>
+        <button class="memory-object env-object" data-memory="envelope"><span>✉</span><b>ENVELOPE</b></button>
+      </div>
+      <p class="hint" id="memoryHint">Tap each object. Nothing here is accidental.</p>
+      <button class="next primary locked" id="memoryNext">CONTINUE</button>
+    </div>
+  </section>
+
+  <section class="chapter" id="chapter5" data-chapter="3">
+    <div class="scene letter-scene">
+      <div class="paper">
+        <div class="paper-top">A LETTER FOR VISHY</div>
+        <div id="letterText"></div>
+        <div class="signature">— Arshad <span>♥</span></div>
+      </div>
+      <button class="next primary" id="letterNext">KEEP GOING</button>
+    </div>
+  </section>
+
+  <section class="chapter" id="chapter6" data-chapter="3">
+    <div class="scene kuruppe-scene">
+      <div class="eyebrow">A VERY IMPORTANT INTERRUPTION</div>
+      <h2>Okay…<br><em>enough emotional drama.</em></h2>
+      <p>Because you're still <strong>Kuruppe.</strong></p>
+      <div class="playful-card">
+        <span>OFFICIALLY ANNOYING.</span>
+        <i>UNOFFICIALLY IRREPLACEABLE.</i>
+      </div>
+      <p class="small-note">Don't let this compliment get to your head.</p>
+      <button class="primary" id="kuruppeBtn">I'M STILL READING 😌</button>
+      <p class="response" id="kuruppeResponse"></p>
+    </div>
+  </section>
+
+  <section class="chapter" id="chapter7" data-chapter="4">
+    <div class="scene never-scene">
+      <div class="eyebrow">04 — THE THINGS I NEVER SAY</div>
+      <div class="scroll-lines">
+        <p>Thank you for staying.</p>
+        <p>Thank you for listening.</p>
+        <p>Thank you for being you.</p>
+        <p>Thank you for the memories.</p>
+        <p>Thank you for making ordinary days<br>feel less ordinary.</p>
+        <p class="final-never">And thank you for becoming family<br>without needing a reason.</p>
+      </div>
+      <button class="next primary">ONE LAST THING</button>
+    </div>
+  </section>
+
+  <section class="chapter" id="chapter8" data-chapter="5">
+    <div class="scene final-scene">
+      <div class="eyebrow">05 — THE LAST ENVELOPE</div>
+      <div class="final-envelope-wrap">
+        <button class="final-envelope" id="finalEnvelope" aria-label="Open the last letter">
+          <span class="final-flap"></span><span class="final-seal">A</span>
+        </button>
+      </div>
+      <p class="one-last">One last thing…</p>
+      <button class="primary" id="finalOpen">OPEN THE LAST LETTER</button>
+      <div class="final-letter" id="finalLetter">
+        <p>Vishy…</p>
+        <p>If someday you forget how much you mean to the people around you…</p>
+        <p>…come back here.</p>
+        <p>And remember.</p>
+        <strong>You are loved.</strong>
+        <strong>You are appreciated.</strong>
+        <strong>And you will always have a brother in me.</strong>
+        <h2>MY SISTER<br>FROM ANOTHER MOTHER <span>♥</span></h2>
+        <div class="always">Always — Arshad</div>
+        <div class="signature-small">Made with a little code, a lot of memories,<br>and way too much emotion.</div>
+        <div class="watermark">ARSHAD</div>
+        <button id="replay" class="replay">↻ Replay the surprise</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="object-modal" id="objectModal" aria-hidden="true">
+  <div class="modal-card">
+    <button class="close-modal" id="closeModal">×</button>
+    <div id="modalIcon"></div><h3 id="modalTitle"></h3><p id="modalText"></p>
+  </div>
+</div>
+
+<div class="secret secret-one" title="Don't click this.">Don't click this.</div>
+<div class="secret secret-two" title="Definitely not important.">Definitely not important.</div>
+<div class="secret secret-three" title="One last secret.">One last secret.</div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
